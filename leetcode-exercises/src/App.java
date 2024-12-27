@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
        // twoSumTestCase(); uncomment to run corresponding test case
+       PalindromeTest();
        
     }
 
@@ -14,5 +15,16 @@ public class App {
             System.out.print(results[i] + " ");
             i++;
         }
+    }
+
+    public static void PalindromeTest() {
+        int[] testNums = {121, -121, 10, 11};
+        Palindrome checkPalindrome = new Palindrome();
+        
+        for (int i = 0; i < testNums.length; i++) {
+            System.out.println( i+1 + ". Is " + testNums[i] + " a Palindrome? -> " +
+                checkPalindrome.isPalindrome(testNums[i]));
+        }
+        
     }
 }
